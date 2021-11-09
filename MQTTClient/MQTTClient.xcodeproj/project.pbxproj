@@ -71,7 +71,7 @@
 		84E2C45B1EC34E9900BC02CE /* MQTTProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2C4561EC34E8500BC02CE /* MQTTProperties.m */; };
 		84E2C45C1EC34E9A00BC02CE /* MQTTProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2C4561EC34E8500BC02CE /* MQTTProperties.m */; };
 		84E2C45D1EC34E9B00BC02CE /* MQTTProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2C4561EC34E8500BC02CE /* MQTTProperties.m */; };
-		92E43B34273A13FD00793A09 /* SocketRocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E43B33273A13FD00793A09 /* SocketRocket.xcframework */; };
+		92E43B38273A179300793A09 /* SocketRocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E43B37273A179300793A09 /* SocketRocket.xcframework */; };
 		AB83810F23F4013000081DD0 /* MQTTCFSocketTransportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB83810E23F4013000081DD0 /* MQTTCFSocketTransportTests.m */; };
 		AB83811023F401A800081DD0 /* MQTTCFSocketTransportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB83810E23F4013000081DD0 /* MQTTCFSocketTransportTests.m */; };
 		AB83811123F401A800081DD0 /* MQTTCFSocketTransportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB83810E23F4013000081DD0 /* MQTTCFSocketTransportTests.m */; };
@@ -359,6 +359,7 @@
 		84C845A31BDD8DB400FEC354 /* MQTTTestFlows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTTestFlows.m; sourceTree = "<group>"; };
 		84E2C4561EC34E8500BC02CE /* MQTTProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTProperties.m; sourceTree = "<group>"; };
 		92E43B33273A13FD00793A09 /* SocketRocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketRocket.xcframework; path = Carthage/Build/SocketRocket.xcframework; sourceTree = "<group>"; };
+		92E43B37273A179300793A09 /* SocketRocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketRocket.xcframework; path = ../Carthage/Build/SocketRocket.xcframework; sourceTree = "<group>"; };
 		AB83810E23F4013000081DD0 /* MQTTCFSocketTransportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQTTCFSocketTransportTests.m; sourceTree = "<group>"; };
 		C21D3C6E1B1EBB0E0012DD2F /* MQTTClientSubscriptionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTClientSubscriptionTests.m; sourceTree = "<group>"; };
 		C21D3C701B1EBD730012DD2F /* MQTTSSLSecurityPolicyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSSLSecurityPolicyTests.m; sourceTree = "<group>"; };
@@ -429,7 +430,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E43B34273A13FD00793A09 /* SocketRocket.xcframework in Frameworks */,
+				92E43B38273A179300793A09 /* SocketRocket.xcframework in Frameworks */,
 				DE9EF5D51C0628FC009EF667 /* Foundation.framework in Frameworks */,
 				DE9EF5D41C0628F6009EF667 /* CoreData.framework in Frameworks */,
 			);
@@ -568,6 +569,7 @@
 			isa = PBXGroup;
 			children = (
 				92E43B33273A13FD00793A09 /* SocketRocket.xcframework */,
+				92E43B37273A179300793A09 /* SocketRocket.xcframework */,
 				C7C24D48208F8FF000DFF5F9 /* Foundation.framework */,
 				C7AA18081FB6F31F00098AA9 /* CoreData.framework */,
 				84A1AF7D1F32482300234C79 /* SocketRocket.framework */,
