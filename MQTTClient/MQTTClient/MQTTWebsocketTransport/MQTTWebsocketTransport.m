@@ -45,10 +45,9 @@
     }];
   
     NSArray <NSString *> *protocols = @[@"mqtt"];
-    
+
     self.websocket = [[SRWebSocket alloc] initWithURLRequest:urlRequest
-                                                   protocols:protocols
-                              allowsUntrustedSSLCertificates:self.allowUntrustedCertificates];
+                                                   protocols:protocols];
     
     self.websocket.delegate = self;
     [self.websocket open];
@@ -74,7 +73,8 @@
     DDLogVerbose(@"[MQTTWebsocketTransport] send(%ld):%@", (unsigned long)data.length,
                  [data subdataWithRange:NSMakeRange(0, MIN(256, data.length))]);
     if (self.websocket.readyState == SR_OPEN) {
-        [self.websocket send:data];
+        NSError *error;
+        [self.websocket sendData:data error:&error];
         return true;
     } else {
         return false;
